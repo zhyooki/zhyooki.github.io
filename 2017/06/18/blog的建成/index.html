@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/18/blog的建成/index.html">
 <meta property="og:site_name" content="York&#39;s blog">
 <meta property="og:description" content="折腾了一天终于建成这个Blog了，目前还有许多内容没有熟悉。域名无法连接成功。虽然使用的是现成的框架，不过看起来还不错的样子。以后就用这个来记录每天的学习吧。">
-<meta property="og:updated_time" content="2017-06-20T14:24:31.732Z">
+<meta property="og:updated_time" content="2017-06-21T15:52:13.895Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blog的建成">
 <meta name="twitter:description" content="折腾了一天终于建成这个Blog了，目前还有许多内容没有熟悉。域名无法连接成功。虽然使用的是现成的框架，不过看起来还不错的样子。以后就用这个来记录每天的学习吧。">
@@ -204,6 +204,26 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -320,7 +340,7 @@
       
 
       
-        <p>折腾了一天终于建成这个Blog了，目前还有许多内容没有熟悉。域名无法连接成功。虽然使用的是现成的框架，不过看起来还不错的样子。以后就用这个来记录每天的学习吧。<br> <a id="more"></a> <!--more--><br>先标记下今天都完成了什么</p>
+        <p>折腾了一天终于建成这个Blog了，目前还有许多内容没有熟悉。域名无法连接成功。虽然使用的是现成的框架，不过看起来还不错的样子。以后就用这个来记录每天的学习吧。<br><a id="more"></a>  <!--more--><br>先标记下今天都完成了什么</p>
 <blockquote>
 <ul>
 <li>搭建git工作环境（虽然不是很明白）</li>
@@ -333,6 +353,12 @@
 <p>初次接触Markdown感觉还不错，以后继续深入了解。</p>
 <hr>
 <h3 id="6-20更新"><a href="#6-20更新" class="headerlink" title="6/20更新"></a>6/20更新</h3><p>今天也是折腾了一晚上，搞定了域名的关联。但还是有个问题,每次部署博客之后GITHUB绑定的域名都会失效？这是什么原因呢？还是没搞明白,先试着。</p>
+<h3 id="6-21更新"><a href="#6-21更新" class="headerlink" title="6/21更新"></a>6/21更新</h3><blockquote>
+<ul>
+<li>完善了部分blog功能</li>
+<li>添加打赏功能</li>
+</ul>
+</blockquote>
 
       
     </div>
@@ -347,6 +373,27 @@
     <div>
       
         
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div></div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/wechatpay.jpg" alt="York WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/alipay.jpg" alt="York Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
     </div>
@@ -468,14 +515,14 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
           
 
         </nav>
-
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=210281&auto=1&height=66"></iframe>
         
 
         <div class="links-of-author motion-element">
@@ -503,7 +550,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-20更新"><span class="nav-number">1.</span> <span class="nav-text">6/20更新</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-20更新"><span class="nav-number">1.</span> <span class="nav-text">6/20更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-21更新"><span class="nav-number">2.</span> <span class="nav-text">6/21更新</span></a></li></ol></div>
             
 
           </div>
@@ -580,6 +627,8 @@
   
 
 
+  
+
 
 
 
@@ -607,6 +656,9 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
